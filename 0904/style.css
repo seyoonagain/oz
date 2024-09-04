@@ -1,0 +1,101 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --color--brand: rgb(255, 88, 10);
+  --color--brand-dark: rgb(247, 78, 0);
+  --color--brand-md: rgb(251, 115, 52);
+  --color--brand-light: rgb(255, 227, 213);
+  --color--banner: rgb(249, 238, 231);
+  --color--darker-gray: rgb(70, 70, 70);
+  --color--dark-gray: rgb(123, 123, 123);
+  --color--md-gray: rgb(150, 150, 150);
+  --color--semi-light-gray: rgb(220, 220, 220);
+  --color--light-gray: rgb(235, 235, 235);
+  --color--white: white;
+}
+
+.flex {
+  display: flex;
+}
+
+button,
+.logo,
+.menu,
+.job-opening,
+li,
+.menu rt-btn,
+.app-store-text {
+  cursor: pointer;
+}
+
+.md-screen,
+.sm-screen,
+.side-menu,
+.footer-top-app-download .app-store-text {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 100%;
+}
+
+.intro-box .post-btn,
+.banner .btn-in-banner {
+  background-color: var(--color--brand);
+  color: var(--color--white);
+  border: 0;
+  border-radius: 0.3rem;
+  font-weight: 500;
+}
+
+.intro-box .post-btn:hover,
+.banner .btn-in-banner:hover {
+  background-color: var(--color--brand-dark);
+}
+
+.intro-box .post-btn:active,
+.banner .btn-in-banner:active {
+  transform: translate(1px, 1px);
+}
+
+@media screen and (max-width: 992px) {
+  .md-screen {
+    display: block;
+  }
+
+  .lg-screen {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sm-screen {
+    display: block;
+  }
+
+  .menus,
+  .chat-btn,
+  .intro-box p,
+  .footer-top-app-download .app-store-btn {
+    display: none;
+  }
+}
