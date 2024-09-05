@@ -44,7 +44,7 @@
 
    console.log(person.name); // Séyoon
    person.nationality = 'South Korea';
-   console.log * person.nationality; // South Korea
+   console.log(person.nationality); // South Korea
    ```
 
 2. `객체.기능()`: 객체가 가지고 있는 기능을 *메소드 method*라고 하며, 해당 메소드를 수행하고자 할 때
