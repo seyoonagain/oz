@@ -20,7 +20,7 @@
 
 <br>
 
-<h4> textContent vs. inner Text </h4>
+<h4> textContent vs. innerText </h4>
 
 ```html
 <div class="test">
