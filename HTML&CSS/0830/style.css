@@ -1,0 +1,50 @@
+* {
+  line-height: 25px;
+}
+
+body {
+  background-color: rgb(230, 245, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  background-color: white;
+  padding: 30px 70px;
+  width: 600px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(133, 133, 133, 0.8);
+  box-shadow: rgba(177, 177, 177, 0.8) 0 0 5px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 100%;
+  width: 170px;
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+footer section {
+  border: none;
+}
+
+.section-title {
+  color: rgb(77, 77, 77);
+}
+
+li {
+  margin-left: -20px;
+}

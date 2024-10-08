@@ -1,0 +1,58 @@
+.intro-banner {
+  background-color: var(--color--brand-light);
+  height: 20rem;
+  align-content: center;
+}
+
+.intro-box {
+  max-width: 50rem;
+  height: 16rem;
+  margin: auto;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.intro-box .intro-message {
+  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.intro-box p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--color--darker-gray);
+}
+
+.intro-box .post-btn {
+  width: 5.3rem;
+  height: 2.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .intro-banner {
+    height: 23rem;
+  }
+
+  .intro-box .post-btn {
+    width: 5.1rem;
+    height: 2.1rem;
+    font-size: 0.75rem;
+  }
+
+  .intro-banner {
+    align-content: start;
+  }
+
+  .intro-box {
+    padding-top: 2rem;
+    justify-content: start;
+  }
+
+  .intro-box .intro-message {
+    line-height: 1.3;
+    font-size: 1.6rem;
+  }
+}
