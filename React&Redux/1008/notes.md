@@ -102,7 +102,7 @@ npm의 창립자들은 "npm"을 소문자로 표기하는 것이 공식적인 �
 - `version`: 패키지의 semantic 버전 정보
 - `main`: 패키지 내 **진입점** 파일 (주로 `index.js`와 같은 파일을 지정)
 - `scripts`: 터미널에서 실행시킬 수 있는 스크립트로, `npm run` 다음에 키워드를 입력하여 해당 코드를 실행
-- `license`: `ISC`는 자유로운 사용 가능 / **`MIT`는 사용 가능하지만 출처를 밝히고, 면책 조항을 포함해야 함**
+- `license`: `ISC`는 자유로운 사용 가능 / `MIT`는 사용 가능하지만 출처를 밝히고, 면책 조항을 포함해야 함\*\*
 - `description`: 패키지에 대한 설명
 - `type`: 모듈의 유형을 지정
   |type|`commonjs` (default)|`module` (ES6)|
