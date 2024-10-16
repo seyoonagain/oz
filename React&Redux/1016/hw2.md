@@ -48,3 +48,11 @@ const Detail = () => {
 
 편리한 사용을 위해 구조분해할당을 이용해 값을 받아왔다.  
 이와 같이 설정해준 동적 라우팅을 통해 다양한 데이터를 보여줄 수 있는 페이지를 만들 수 있다.
+
+<br>
+
+`id` 정보를 이용해 받아온 데이터가 상세페이지에 다음과 같이 렌더링 되었다.
+
+<br>
+
+<img width="700" alt="image" src="https://gist.github.com/user-attachments/assets/fc15d8a8-5bb1-4c33-9953-5beaca51bdc3">

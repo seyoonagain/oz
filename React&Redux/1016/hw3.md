@@ -58,3 +58,11 @@ const Search = () => {
 <br>
 
 `korean-regexp`라는 디펜던시를 설치하여 한국어 자음 또는 모음만으로도 일치하는 결과를 가져올 수 있는 정규표현식을 만들어 필터링하였다.
+
+<br>
+
+자음 하나만 입력 후 검색하였는데, 해당 자음을 포함하는 모든 결과물이 다음과 같이 렌더링 되었다.
+
+<br>
+
+<img width="700" alt="image" src="https://gist.github.com/user-attachments/assets/b2139922-3f56-4afa-84fc-8e729f84cf38">

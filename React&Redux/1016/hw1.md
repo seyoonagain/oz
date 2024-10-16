@@ -67,6 +67,14 @@ const AnimalList = ({ animalData }) => {
 };
 ```
 
+<br>
+
+메인화면에서 다음과 같이 데이터가 렌더링 되었다.
+
+<br>
+
+<img width="700" alt="image" src="https://gist.github.com/user-attachments/assets/f7efbd67-1247-42a5-918b-1e50120487ec">
+
 ---
 
 ### **라우터 설정하는 또 다른 방식**
