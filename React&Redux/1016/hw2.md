@@ -24,7 +24,12 @@ function App() {
 이 때 표시되는 컴포넌트는 `<Detail />`로,
 해당 컴포넌트에서 `id` 자리에 쓰인 값을 `useParams()`를 이용해 가져올 수 있다.  
 `useParams()`를 콘솔에 찍으면 다음과 같이 나온다.
-![alt text](image.png)
+
+<br>
+
+<img src='https://gist.github.com/user-attachments/assets/cc34c070-48d5-40f9-a454-35d2ab3af1b1'>
+
+<br>
 
 ```jsx
 // Detail.jsx
