@@ -136,14 +136,18 @@ useEffect(() => {
    렌더링 후 `useEffect()`의 콜백함수가 실행된다.
 
 - **의존성 배열이 빈 배열인 경우**  
-   컴포넌트가 처음 **mount**될 때만 `useEffect()`의 콜백함수가 실행된다. (_componentDidMount()_)
+   컴포넌트가 처음 **mount**될 때만 `useEffect()`의 콜백함수가 실행된다. (_componentDidMount()_)  
+  컴포넌트가 최종적으로 **unmount**될 때는 콜백함수의 리턴함수가 실행된다. (componenetWillUnmount())
 
 - **의존성 배열을 전달하지 않은 경우**  
    컴포넌트가 **mount** 되었을 때, (_componentDidMount()_)  
    그리고 컴포넌트가 **update**될 때마다, (_componentDidUpdate()_)  
-   렌더링 후 `useEffect()`의 콜백함수가 실행된다.  
-   `useEffect()`를 사용하지 않고 컴포넌트 내부에 작성한 함수는 렌더링 도중 실행되지만,  
-   `useEffect()`로 감싸준 콜백함수는 렌더링이 다 끝나고 난 뒤 실행된다는 차이가 있다.
+   렌더링 후 `useEffect()`의 콜백함수가 실행된다.
+  > 여기서 또 궁금증 💭  
+  > 의존성 배열이 전달이 안된 경우,  
+  > 컴포넌트 업데이트 될 때마다 콜백함수를 실행하면 그냥 컴포넌트 내부에 useEffect()없이 쓴 거랑 무슨 차이지?  
+  > useEffect()를 사용하지 않고 컴포넌트 내부에 작성한 함수는 렌**더링 도중 실행**되지만,  
+  > useEffect()로 감싸준 콜백함수는 **렌더링이 다 끝나고 난 뒤 실행**된다는 차이가 있다.
 
 ---
 
