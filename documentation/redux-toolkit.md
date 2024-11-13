@@ -189,6 +189,44 @@ Redux Toolkit에서는 `configureStore()` 함수를 이용하여 Store을 생성
 
 ---
 
+### **createSelector()**
+
+`createSelector()` 함수는 store에 담긴 상태를 그대로 가져오는 것이 아니라, 필터링과 같은 가공이 필요한 경우에 사용된다.  
+상태를 선택하는 방식은 `useSelector()`와 유사하며, 마지막 인자로 선택한 상태들을 인자로 받는 함수를 작성합니다.
+
+```jsx
+const selectCalculatedValue = createSelector(
+  (state) => state.counter,
+  (state) => state.multiplier,
+  (counterValue, multiplierValue) => counterValue * multiplierValue
+);
+```
+
+위의 코드에서 `counter` 슬라이스와 `multiplier` 슬라이스에서 가져온 상태 값이  
+각각 `counterValue`, `multiplierValue`라는 이름으로 마지막 인자인 함수의 매개변수로 들가는 걸 알 수 있다.
+
+<br>
+
+이렇게 만든 선택자 함수 `selectCalculatedValue`를 `useSelector()`의 인자로 전달하여 상태를 가져올 수 있다.
+
+```jsx
+const calculatedValue = useSelector((state) => selectCalculatedValue(state));
+// 또는 줄여서 아래와 같이 작성 가능하다.
+const calculatedValue = useSelector(selectCalculatedValue);
+```
+
+- **`createSelector()` 사용의 장점**
+  - **메모이제이션**  
+    `createSelector()`는 내부적으로 메모이제이션을 수행하여,  
+    의존하는 상태 값이 변경되지 않는 한 이전에 계산된 결과를 재사용함으로써,  
+    불필요한 계산을 줄여 성능을 향상시킬 수 있다.
+  - **가독성**  
+    상태 가공 로직을 분리시킴으로써 가독성이 높아지고, 코드 유지보수를 쉽게 만든다.
+  - **재사용성**  
+    작성한 선택자 함수를 여러 컴포넌트에서 가져가 재사용할 수 있어, 코드의 중복을 줄이고 일관성을 유지할 수 있다.
+
+---
+
 ### **상태 업데이트 하기**
 
 슬라이스의 액션 생성자를 이용해 액션을 생성하고 `dispatch`에 전달하면,
